@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/bd9235e586.js" crossorigin="anonymous"></script>
+    <title>Redes CV</title>
+    <link rel="icon" href="cv.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300&family=Syne+Tactile&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header ><!-- barra de navegacion y logo -->
+        <div id="logo-cv">
+            CV WEB
+        </div>
+        <div id="menu-cv">
+            <nav id="nav-cv">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="Experiencia.html">EXPERIENCIA</a></li>
+                    <li><a href="Educacion.html">EDUCACIÒN</a></li>
+                    <li><a href="AptitudesyHabilidades.html">APTITUDES Y OBJETIVOS</a></li>
+                    <li><a href="Redes.html">REDES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido-cv" >
+        <h1 id="redes-titulo">REDES DE CONTACTO</h1>
+        <div id="redes-cv">
+            <div id="enlases-cv" >
+                <!-- los enlaces no redireccionan a mis perfiles  -->
+                <b><a id="enlases" href="https://github.com/fee-sco211?tab=repositories" target="_blank"><i class="fa-brands fa-github"> git hub </i></a></b>
+                <b><a id="enlases" href="https://www.facebook.com/federico.scoles.5/" target="_blank"><i class="fa-brands fa-facebook"> faceboock</i></a></b>
+                <b><a id="enlases" href="https://wa.me/+5491138572410" target="_blank"><i class="fa-brands fa-whatsapp"> whatsapp</i></a></b>
+                <b><a id="enlases" href="https://www.instagram.com/federicoscoles/?hl=es" target="_blank"><i  class="fa-brands fa-instagram"> instagram</i></a></b>
+            </div>
+        </div>
+            <button id="butForm1"> Mensaje </button>
+        <div id="formulario">
+            <form id="form-de-contacto">
+                <p id="texto-info">Si desea ponerse en contacto conmigo de forma directa lo puede hacer por este medio</p>
+                <input id="email" type="email" placeholder="Ingresa tu Imail" class="campo" required>
+                <textarea name="mensaje" placeholder="Ingresa tu mensaje" required></textarea>
+                <input type="submit" name="Enviar" value="enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </main>
+    <footer><!-- pie de pagina -->
+        <p>@ 2023 Hecho para el curso de Ticmas. Creador Federico</p>
+    </footer>
+    <script src="Redes.js"></script>
+</body>
+</html>
