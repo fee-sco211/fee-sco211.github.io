@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    margin-top: 50px;
+    font-size: 1.6em;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    background-image: url(fondo.png);
+    background-size: cover;
+}
+
+.header {
+    background-color: rgb(44, 94, 163);
+    color: rgb(255, 255, 255);
+    padding: 0.8rem 2rem;
+    position: fixed;           /* fija en una pisicion estatica en la pantalla*/
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+    .header a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+.container-logo{
+    display: flex;                  /* ( flex y space-between permite que se separen y ocpen todo el espacio disponible*/
+    justify-content: space-between;
+    align-items: center;            /* centrado */
+}
+
+.logo{
+    margin: 1rem;
+}
+
+.logo p{
+    background-color:rgb(44, 94, 163);
+    padding: 0.5rem 1rem;
+    box-sizing: content-box;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 3px solid rgb(255, 255, 255);
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+
+.navigation{
+    width: 100%;
+    text-align: right;
+}
+
+.navigation ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 45px;
+    color: rgb(193, 193, 193);
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/** ----------------------------- cuerpo ---------------------------------*/
+
+main{
+    text-align: center;
+    padding-top: 10%;
+}
+
+/** ----------------------------- presentacion ---------------------------------*/
+
+#info-sobremi{
+    display: grid;
+    padding: 0% 25% ;
+}
+
+#img-cv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#datos-cv{
+    text-align: left;
+}
+
+#info-sobremi img{
+    height: 300px;
+    width: 235px;
+}
+
+#presentacion-cv{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10PX;
+}
+
+/** ----------------------------- experiencia ---------------------------------*/
+#experiencia-cv{
+    margin-bottom: 100px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+#expLaboral{
+    margin-bottom: 50px;
+}
+#trabajo{
+    padding-left: 50px;
+    text-align: left;
+}
+
+#posicion{
+    margin-top: 70px;
+}
+
+#localidad{
+    margin-bottom: 15px;
+}
+
+/** ----------------------------- educacion ---------------------------------*/
+
+#formacion{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+#Secundario{
+    margin-top: 100px;
+    text-align: left;
+}
+
+#terciario{
+    padding-top: 100px;
+    text-align: left;
+}
+
+
+/** ----------------------------------------------- aptitudes y habilidades --------------------------------------------------------- */
+
+#aptirudesyhabilidades-cv{
+    padding-top: 200px;
+}
+
+#listado-conocimientos{
+    display: block;
+    font-size: 2em;
+}
+#conocimientos{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+#Titulo{
+    margin-bottom: 30px;
+}
+
+#intereses{
+    text-align: center;
+    display: none;
+}
+
+#aptitudes{
+    font-size: .7em;
+    text-align: left;
+}
+.fa-sharp{
+    font-size: .4em;
+}
+
+#pasatiempos-titulo{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#logos-pasatiempos{
+    display: flex;
+    justify-content: center;
+}
+
+#pasatiempo{
+    padding: 40px 20px 20px 20px;
+    font-size: 2em;
+    display: grid;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+#icono-pasatiempos{
+    color: blueviolet;
+}
+
+#conocimientosButton{
+    align-items: center;
+    display: none;
+}
+
+#centrado{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.botones{
+    background-color: rgb(255, 192, 115);
+    border: none;
+    padding: 10px 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 4px rgba(0,0,0,0.2);
+}
+
+/** ----------------------------- redes ---------------------------------*/
+
+#redes-titulo{
+    padding-bottom: 30px;
+}
+
+#redes-cv{
+    line-height: 200px;
+}
+
+#enlases{
+    background-color: rgba(136, 136, 136, 0.1);
+    padding: 40px;
+    margin: 10px;
+    border: solid rgb(113, 113, 113) 2px;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    color: rgb(72, 72, 72);
+    font-size: 0.8em;
+}
+
+#butForm1{
+    background-color: rgb(44, 94, 163);
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 3px rgba(0,0,0,0.2);
+}
+
+#formulario{
+    display: none;
+}
+
+form{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    gap: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#texto-info{
+    margin-bottom: 5px;
+}
+
+form .campo, textarea{
+    padding: 15px 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    outline: 0px;
+}
+
+form textarea{
+    max-width: 500px;
+    min-height: 140px;
+    max-height: 150px;
+
+}
+
+.btn-enviar{
+    color:  rgb(255, 255, 255);
+    background-color: rgb(44, 94, 163);
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 3px rgba(0,0,0,0.2);
+}
+/** ----------------------------- pie de pagina ---------------------------------*/
+
+footer{
+    background-color: rgb(44, 94, 163);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 50px;
+    bottom:0px;
+    width: 100%;
+    margin-top: auto;
+    display: table;
+}
+
+/** ---------------------- adaptavilidad ------------------------------ */
+
+@media (max-width:1200px){
+    body{
+        font-size: 1.5rem;
+        margin-left: 0;
+        height: calc(100vh - 50px);
+    }
+    main{
+        margin-top: 100px;
+    }
+    /** ---------------------- header ------------------------------ */
+    .checkbtn{
+        display: block;
+    }
+    .header{
+        background-color: rgb(44, 94, 163);
+        height: 80px;
+    }
+    #logo-cv{
+        text-align: left;
+        margin-top: 20px;
+        color:  rgb(255, 255, 255);
+        line-height: 30px;
+        font-size: 30px;
+    }
+    #menu-cv{
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(44, 94, 163);
+        top: 100px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+    nav ul li a{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    li a:hover, li a.active{
+        background: none;
+    }
+    #check:checked ~ ul{
+        right:0;
+    }
+    label{
+        width: 10%;
+        text-align: center;
+    }
+        /** ---------------------- PRESENTACION ------------------------------ */
+    #info-sobremi{
+        padding-left: 19%;
+    }
+    /** ----------------------------- redes ---------------------------------*/
+    #enlases{
+        margin-left: 5px;
+        height: 10px;
+        width: 100px;
+    }
+    form{
+        max-width: 200px;
+    }
+    form textarea{
+        max-width: 200px;
+    }
+    /** ----------------------------- formacion ---------------------------------*/
+    #secundario #terciario{
+        text-align: center;
+        width: 250px;
+    }
+    /** ----------------------------- aptitudes y hablidades ---------------------------------*/
+    #aptirudesyhabilidades-cv{
+        padding-top: 50px;
+    }
+    #pasatiempo{
+        font-size: 1.6rem;
+    }
+    #logos-pasatiempos{
+        display:grid;
+    }
+}
