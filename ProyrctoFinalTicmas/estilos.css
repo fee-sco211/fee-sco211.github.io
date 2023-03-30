@@ -128,7 +128,7 @@ main{
 
 /** ----------------------------- experiencia ---------------------------------*/
 #experiencia-cv{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     display: grid;
     justify-content: center;
     text-align: center;
@@ -184,7 +184,7 @@ main{
     text-align: center;
 }
 #Titulo{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 #intereses{
